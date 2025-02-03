@@ -6,6 +6,7 @@
         {
             Console.WriteLine("Hello, World!2");
             Console.WriteLine("이건 집에서 추가");
+            Console.WriteLine("이건 학원에서 추가");
         }
     }
 }
