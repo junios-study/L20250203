@@ -4,29 +4,36 @@
     {
         static void Main(string[] args)
         {
-            //----*
-            //---**
-            //--***
-            //-****
-            //*****
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
+            //[][][][][][][][][][]
 
-            int size = 10;
+            int[,] data = new int[10, 10];
 
-            for (int j = 1; j <= size; j++)
+            int number = 1;
+            for (int j = 0; j < 10; j++)
             {
-                for (int i = 1; i <= size - j; i++)
+                for (int i = 0; i < 10; i++)
                 {
-                    Console.Write(' ');
+                    data[j, i] = number++;
                 }
-                for (int i = 1; i <= j; i++)
+            }
+
+            for (int j = 0; j < 10; j++)
+            {
+                for (int i = 0; i < 10; i++)
                 {
-                    Console.Write('*');
+                    Console.Write(data[j, i].ToString() + "\t" );
                 }
                 Console.WriteLine();
             }
-
-
-
         }
     }
 }
