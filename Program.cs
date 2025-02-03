@@ -97,19 +97,23 @@ namespace L20250203
 
         private static void Update()
         {
-            if (keyInfo.Key == ConsoleKey.W)
+            if (keyInfo.Key == ConsoleKey.W ||
+                keyInfo.Key == ConsoleKey.UpArrow)
             {
                 playerY--;
             }
-            else if (keyInfo.Key == ConsoleKey.S)
+            else if (keyInfo.Key == ConsoleKey.S ||
+                keyInfo.Key == ConsoleKey.DownArrow)
             {
                 playerY++;
             }
-            else if (keyInfo.Key == ConsoleKey.A)
+            else if (keyInfo.Key == ConsoleKey.A ||
+                keyInfo.Key == ConsoleKey.LeftArrow)
             {
                 playerX--;
             }
-            else if (keyInfo.Key == ConsoleKey.D)
+            else if (keyInfo.Key == ConsoleKey.D ||
+                keyInfo.Key == ConsoleKey.RightArrow)
             {
                 playerX++;
             }
