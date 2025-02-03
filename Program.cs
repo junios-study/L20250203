@@ -4,9 +4,29 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!2");
-            Console.WriteLine("이건 집에서 추가");
-            Console.WriteLine("이건 학원에서 추가");
+            //----*
+            //---**
+            //--***
+            //-****
+            //*****
+
+            int size = 10;
+
+            for (int j = 1; j <= size; j++)
+            {
+                for (int i = 1; i <= size - j; i++)
+                {
+                    Console.Write(' ');
+                }
+                for (int i = 1; i <= j; i++)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
+            }
+
+
+
         }
     }
 }
